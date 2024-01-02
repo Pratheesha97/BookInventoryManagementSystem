@@ -11,3 +11,7 @@ hooks:
  AfterInstall:
    - location: scripts/after_script.sh
      runas: root
+
+ApplicationStart:
+    - location: scripts/applicationStart.sh
+      runas: root
