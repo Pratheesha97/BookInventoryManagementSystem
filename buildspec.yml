@@ -16,8 +16,7 @@ phases:
     commands:
       - npm i concurrently
       - npm install -g nodemon
-      - npm install
-      - npm run build  # Replace with your specific command for starting the Node.js app in development mode
+      - npm install  # Replace with your specific command for starting the Node.js app in development mode
 
 artifacts:
   files:
