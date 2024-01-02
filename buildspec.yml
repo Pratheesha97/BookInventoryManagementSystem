@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+
+  pre_build:
+    commands:
+      - cd client  # Navigate to the client directory
+      - npm install
+      - npm run build  # Replace with your build command for the client app
+      - cd ..
+
+  build:
+    commands:
+      - npm i concurrently 
+      - npm install
+      - npm run dev  # Replace with your specific command for starting the Node.js app in development mode
+
+artifacts:
+  files:
+    - '**/*'  # Include all files in the artifact
+  discard-paths: yes
