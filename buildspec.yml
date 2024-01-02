@@ -7,7 +7,7 @@ phases:
 
   pre_build:
     commands:
-      - cd client  # Navigate to the client directory
+      - cd client  # Navigate to the client
       - npm install
       - npm run build  # Replace with your build command for the client app
       - cd ..
