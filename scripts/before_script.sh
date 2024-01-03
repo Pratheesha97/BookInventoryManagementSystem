@@ -2,8 +2,7 @@
 
 set -e
 
-cd "$(dirname "$0")"
-cd client
+cd "$(dirname "$0")/client"
 npm install
 npm run build
 cd ..
