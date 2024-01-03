@@ -2,7 +2,7 @@
 
 set -e
 
-cd ../client
+cd "$PWD/../client"
 npm install
 npm run build
 cd ..
